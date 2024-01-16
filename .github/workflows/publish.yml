@@ -20,7 +20,7 @@ jobs:
         run: npm run build
 
       - name: Push
-        uses: s0/git-publish-subdir-action@main
+        uses: s0/git-publish-subdir-action@v1.0.0
         env:
           repo: self
           branch: build
