@@ -1,6 +1,6 @@
 
 function Message() {
-    return <h1>Hello World!</h1>;
+    return <h1>Hello World!, This is a test!</h1>;
 }
 
 export default Message;
