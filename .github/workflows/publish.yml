@@ -22,7 +22,7 @@ jobs:
       - name: Push
         uses: s0/git-publish-subdir-action@v1.0.0
         env:
-          repo: self
+          repo: fstevens30/zoeecstasy
           branch: build
           folder: dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
