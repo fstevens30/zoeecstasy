@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
-        
+
       - name: Install dependencies
         run: npm install
 
@@ -20,7 +20,7 @@ jobs:
         run: npm run build
 
       - name: Push
-        uses: s0/git-publish-subdir-action@develop
+        uses: s0/git-publish-subdir-action@main
         env:
           repo: self
           branch: build
