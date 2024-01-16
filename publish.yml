@@ -1,0 +1,29 @@
+name: Build React project and push output to Build branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and push
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+        
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          repo: self
+          branch: build
+          folder: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Build ({sha}) {msg}"
