@@ -17,22 +17,31 @@ function Main() {
       <h2>coming soon...</h2>
 
       <div id="socialIcons">
-        <a href="">
+        <a
+          href="https://open.spotify.com/artist/6ujW3pX50DpH6Cu9MeX8nq"
+          target="_blank"
+        >
           <FontAwesomeIcon className="fa-icon" icon={faSpotify} />
         </a>
-        <a href="">
+        <a
+          href="https://music.youtube.com/channel/UCE7ewWTxgYjsJwQMbh_QWUQ"
+          target="_blank"
+        >
           <FontAwesomeIcon className="fa-icon" icon={faYoutube} />
         </a>
-        <a href="">
+        <a
+          href="https://music.apple.com/nz/artist/zoe-ecstasy/1650651815"
+          target="_blank"
+        >
           <FontAwesomeIcon className="fa-icon" icon={faItunesNote} />
         </a>
-        <a href="">
+        <a href="https://soundcloud.com/zoeecstasy" target="_blank">
           <FontAwesomeIcon className="fa-icon" icon={faSoundcloud} />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/zoeecstasy/" target="_blank">
           <FontAwesomeIcon className="fa-icon" icon={faInstagram} />
         </a>
-        <a href="">
+        <a href="https://www.tiktok.com/@zoeecstasy" target="_blank">
           <FontAwesomeIcon className="fa-icon" icon={faTiktok} />
         </a>
       </div>
