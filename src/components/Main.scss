@@ -1,12 +1,19 @@
+$primary-pink: #ffadc1;
+$light-pink: #ffcde8;
+$dark-pink: #ff61a0;
+$brown: #4d3627;
+$cream: #fcf3d9;
+
 .main {
-    background-color: pink;
+    background-color: $primary-pink;
     width: 100vw;  
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fcf3d9;
+    color: $cream;
+    font-style: italic;
 }
 
 .main a {
@@ -15,12 +22,12 @@
     padding: 1rem;
 
     .fa-icon {
-        color: #fcf3d9;
+        color: $cream;
     }
 }
 
 .main a :hover {
-    color: #4d3627;
+    color: $dark-pink;
     transition: 0.5s;
 }
 
@@ -37,6 +44,25 @@
 }
 
 .main h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
+}
+
+@media screen and (min-width: 42rem) {
+
+    .main #socialIcons {
+        display: flex;
+    }
+
+    .main a {
+        font-size: 4rem;
+    }
+
+    .main h1 {
+        font-size: 6rem;
+    }
+
+    .main h2 {
+        font-size: 3rem;
+    }
 }
