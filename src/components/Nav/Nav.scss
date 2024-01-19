@@ -3,7 +3,6 @@
 nav {
     background-color: $primary-pink;
     color: $cream;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +12,10 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .social-icons a {
+        font-size: 2em;
     }
 
     a {
@@ -25,13 +28,16 @@ nav {
     a:hover {
         color: $dark-pink;
         text-decoration: underline;
-        transition: 0.5s;
+        transition: 0.5s ease-in-out;
     }
 
     // Desktop view
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+        padding: 0 4em;
+        font-size: 1.2em;
+
 
         .nav-links, .social-icons {
             flex-direction: row;
