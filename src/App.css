@@ -1,3 +1,11 @@
+:root {
+    --primary-pink: #ffacd1;
+    --light-pink: #ffcde8;
+    --dark-pink: #ff61a0;
+    --brown: #4d3627;
+    --cream: #fcf3d9;
+}
+
 html, body {
     height: 100%;
     margin: 0;

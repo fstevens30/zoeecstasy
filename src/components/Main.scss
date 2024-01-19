@@ -1,18 +1,12 @@
-$primary-pink: #ffadc1;
-$light-pink: #ffcde8;
-$dark-pink: #ff61a0;
-$brown: #4d3627;
-$cream: #fcf3d9;
-
 .main {
-    background-color: $primary-pink;
+    background-color: var(--primary-pink);
     width: 100vw;  
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: $cream;
+    color: var(--cream);
     font-style: italic;
 }
 
@@ -22,12 +16,12 @@ $cream: #fcf3d9;
     padding: 1rem;
 
     .fa-icon {
-        color: $cream;
+        color: var(--cream);
     }
 }
 
 .main a :hover {
-    color: $dark-pink;
+    color: var(--dark-pink);
     transition: 0.5s;
 }
 
