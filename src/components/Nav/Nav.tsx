@@ -1,4 +1,4 @@
-import "./Main.scss";
+import "./Nav.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpotify,
@@ -8,15 +8,18 @@ import {
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
-function Main() {
+const Nav = () => {
   return (
-    <div className="main">
-      <h1>zoe ecstasy</h1>
+    <nav>
+      <div className="nav-links">
+        <Link to="/">home</Link>
+        <Link to="/about">about</Link>
+        <Link to="/contact">contact</Link>
+      </div>
 
-      <h2>coming soon...</h2>
-
-      <div id="socialIcons">
+      <div className="social-icons">
         <a
           href="https://open.spotify.com/artist/6ujW3pX50DpH6Cu9MeX8nq"
           target="_blank"
@@ -45,8 +48,8 @@ function Main() {
           <FontAwesomeIcon className="fa-icon" icon={faTiktok} />
         </a>
       </div>
-    </div>
+    </nav>
   );
-}
+};
 
-export default Main;
+export default Nav;

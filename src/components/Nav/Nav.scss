@@ -1,0 +1,40 @@
+@import "../../App.scss";
+
+nav {
+    background-color: $primary-pink;
+    color: $cream;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .nav-links, .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    a {
+        color: $cream;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+
+    a:hover {
+        color: $dark-pink;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+
+    // Desktop view
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .nav-links, .social-icons {
+            flex-direction: row;
+        }
+    }
+}
