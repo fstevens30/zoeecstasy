@@ -1,0 +1,46 @@
+@import "../../App.scss";
+
+nav {
+    background-color: $primary-pink;
+    color: $cream;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .nav-links, .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social-icons a {
+        font-size: 2em;
+    }
+
+    a {
+        color: $cream;
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+
+    a:hover {
+        color: $dark-pink;
+        text-decoration: underline;
+        transition: 0.5s ease-in-out;
+    }
+
+    // Desktop view
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4em;
+        font-size: 1.2em;
+
+
+        .nav-links, .social-icons {
+            flex-direction: row;
+        }
+    }
+}
