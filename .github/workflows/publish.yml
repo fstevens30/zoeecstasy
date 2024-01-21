@@ -3,7 +3,7 @@ name: Build React project and push output to Build branch
 on:
   push:
     branches:
-      - main
+      - live
 
 jobs:
   build:
