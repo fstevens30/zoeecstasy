@@ -1,7 +1,9 @@
+import "./Hero.scss";
+
 function Hero() {
   return (
-    <div>
-      <h1>Hero</h1>
+    <div className="hero">
+      <h1>zoe ecstasy</h1>
     </div>
   );
 }

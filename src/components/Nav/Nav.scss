@@ -35,12 +35,13 @@ nav {
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 4em;
+        padding: 0 2em;
         font-size: 1.2em;
 
-
-        .nav-links, .social-icons {
-            flex-direction: row;
+        .nav-links {
+            width: 50%;
+            justify-content: space-evenly;
+            padding: 0.5em;
         }
     }
 }

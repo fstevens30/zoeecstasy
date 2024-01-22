@@ -1,7 +1,9 @@
+import "./Footer.scss";
+
 function Footer() {
   return (
     <footer>
-      <h1>Footer</h1>
+      <p> &copy; 2024 zoe ecstasy </p>
     </footer>
   );
 }
