@@ -17,4 +17,10 @@ footer {
         padding: 0.5em;
         margin: 0;
     }
+
+    // Mobile view
+    @media (max-width: 767px) {
+        padding: 0.2em;
+        font-size: 0.8em;
+    }
 }
