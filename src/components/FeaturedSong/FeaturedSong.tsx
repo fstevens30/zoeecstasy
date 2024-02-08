@@ -1,9 +1,11 @@
 import "./FeaturedSong.scss";
+import WebPlayer from "./WebPlayer";
 
 function FeaturedSong() {
   return (
     <div>
-      <h1>Featured Song</h1>
+      <h2>Featured Song</h2>
+      <WebPlayer />
     </div>
   );
 }
