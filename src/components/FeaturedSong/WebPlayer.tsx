@@ -1,7 +1,7 @@
-function WebPlayer() {
+function WebPlayer({ url }: { url: string }) {
   return (
     <iframe
-      src="https://open.spotify.com/embed/track/0MFqHspwuYW7LFlldeXfAa?utm_source=generator&theme=0"
+      src={url}
       width="50%"
       height="152"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
